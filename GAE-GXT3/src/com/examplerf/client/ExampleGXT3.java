@@ -90,7 +90,7 @@ public class ExampleGXT3 implements EntryPoint, IsWidget {
    public void onSave(SaveEvent saveEvent) {
      
     RequestContext context = driver.flush();
-    if(!driver.hasErrors()&&editor.isValid()){
+    if(!driver.hasErrors()){
      editor.hide();
      context.fire(new Receiver<Void>() {
        

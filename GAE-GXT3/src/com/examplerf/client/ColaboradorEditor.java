@@ -44,14 +44,10 @@ public class ColaboradorEditor implements Editor<ColaboradorProxy>, HasHandlers 
   
  public ColaboradorEditor() {
   handlerManager = new HandlerManager(this);
-  panel = new Window();
-  panel.setResizable(false); 
-   
+  
   edad = new NumberField<Integer>(new NumberPropertyEditor.IntegerPropertyEditor());
-  //edad.setAllowDecimals(false);
    
-  panel.setWidget(uiBinder.createAndBindUi(this));
-  form.getHeader().setVisible(false);  
+  panel = (Window) uiBinder.createAndBindUi(this);
  }
    
  public void show(String title){
@@ -86,12 +82,6 @@ public class ColaboradorEditor implements Editor<ColaboradorProxy>, HasHandlers 
   
  public void hide() {
   panel.hide();
- }
-  
- public boolean isValid() {
-  boolean n = nombres.isValid();
-  boolean a = apellidos.isValid();
-  return n && a;
  }
  
 }
