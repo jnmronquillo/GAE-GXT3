@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to='examplegxt3'>
+  <inherits name='com.google.gwt.user.User'/>
+  <inherits name='com.google.gwt.user.theme.clean.Clean'/>
+  <inherits name="com.googlecode.objectify.Objectify" />
+  <inherits name='com.google.web.bindery.requestfactory.RequestFactory' />  
+  <inherits name='com.sencha.gxt.ui.GXT'/>
+  <inherits name="com.sencha.gwt.uibinder.UiBinder" />  
+  
+  <entry-point class='com.examplerf.client.ExampleGXT3'/>
+
+  <source path='client'/>
+  <source path='shared'/>
+
+</module>
